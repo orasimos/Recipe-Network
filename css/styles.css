@@ -1,0 +1,98 @@
+/* css/styles.css */
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.errors {
+    background-color: #fdd;
+    border: 1px solid #f99;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.errors ul {
+    list-style: disc inside;
+}
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(50% - 20px);
+    position: relative;
+}
+
+.recipe-card img.thumb,
+.recipe-card .thumb.placeholder {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #eee;
+    text-align: center;
+    line-height: 150px;
+    color: #888;
+}
+
+.recipe-card h3 {
+    margin: 10px 0 5px;
+}
+
+.recipe-card p {
+    margin-bottom: 5px;
+}
+
+.recipe-card button {
+    margin-top: 5px;
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0;
+}
+
+#commentForm textarea {
+    resize: vertical;
+}
+
+.input-error {
+    border: 1px solid red !important;
+}
